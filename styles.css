@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Set background to black */
+    color: #fff; /* Text color for visibility */
+}
+
+#welcome-screen {
+    text-align: center;
+}
+
+#welcome-text {
+    cursor: pointer; /* Change cursor to pointer */
+    color: rgba(255, 255, 255, 0.8); /* Semi-transparent text color */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    font-size: 16px; /* Smaller font size */
+}
+
+#welcome-text:hover {
+    color: rgba(255, 255, 255, 1); /* Fully opaque text on hover */
+}
+
+#main-content {
+    text-align: center; /* Center text in main content */
+    margin-left: 0px; /* Move the whole content to the left */
+}
+
+h2 {
+    margin-left: -10px; /* Align heading with the profile picture */
+}
+
+#profile-section {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin: 20px auto; /* Center profile section */
+    position: relative; /* Position context for absolute elements */
+}
+
+#profile-picture {
+    width: 150px; /* Set width for the profile picture box */
+    height: 150px; /* Set height for the profile picture box */
+    overflow: hidden; /* Hide overflow if the image is larger */
+}
+
+#profile-img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Ensure the image covers the area */
+    border: 2px solid #fff; /* White border around the image */
+}
+
+#typing-container {
+    font-size: 18px; /* Font size for typing text */
+    color: #fff; /* Text color */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflow */
+    margin-left: 10px; /* Space from the profile picture */
+    position: absolute; /* Absolutely position the text */
+    left: 160px; /* Position to the right of the profile picture */
+    top: 50%; /* Center vertically relative to the profile picture */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+#social-links {
+    display: flex; /* Use flexbox for even spacing */
+    justify-content: center; /* Center the links */
+    margin-top: 10px; /* Space between the profile and links */
+}
+
+.social-icon {
+    width: 30px; /* Set a fixed width for icons */
+    height: 30px; /* Set a fixed height for icons */
+    margin: 0 5px; /* Space between icons */
+    transition: transform 0.3s; /* Add a hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
