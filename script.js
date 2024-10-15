@@ -1,12 +1,16 @@
 document.getElementById('welcome-text').addEventListener('click', function() {
     document.getElementById('welcome-screen').style.display = 'none';
     document.getElementById('main-content').style.display = 'block';
-    
+
+    // Play the background music
+    const audio = document.getElementById('background-music');
+    audio.play();
+
     // Start the typing effect after clicking to enter
     typeWord();
 });
 
-const words = ["OSINT | CSINT", "discord @pzrc", "rfz is a cute little skid",]; // Words to cycle through
+const words = ["OSINT | CSINT", "discord @pzrc", "rfz is a cute little skid"]; // Words to cycle through
 let wordIndex = 0;
 let letterIndex = 0;
 const typingText = document.getElementById("typing-text");
@@ -33,14 +37,3 @@ function removeWord() {
         setTimeout(typeWord, 500); // Wait before typing the next word
     }
 }
-document.getElementById('welcome-text').addEventListener('click', function() {
-    document.getElementById('welcome-screen').style.display = 'none';
-    document.getElementById('main-content').style.display = 'block';
-    
-    // Play the background music
-    const audio = document.getElementById('background-music');
-    audio.play();
-    
-    // Start the typing effect after clicking to enter
-    typeWord();
-});
