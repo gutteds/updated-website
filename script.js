@@ -9,7 +9,6 @@ document.getElementById('welcome-text').addEventListener('click', function() {
     // Start the typing effect after clicking to enter
     typeWord();
 });
-
 const words = ["OSINT | CSINT", "discord @pzrc", "rfz is a cute little skid"]; // Words to cycle through
 let wordIndex = 0;
 let letterIndex = 0;
